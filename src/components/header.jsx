@@ -6,7 +6,7 @@ import Hamburger from "./hamburger"
 export default function Header() {
     return(
         <header className="container mx-auto flex items-center justify-between">
-            <Image src={bookMark} alt="bookmark Logo"></Image>
+            <Image className="z-10" src={bookMark} alt="bookmark Logo"></Image>
             <Hamburger data={["FEATURES", "PRICING", "CONTACT"]} />
             <nav className="flex items-center justify-center gap-16 max-md:hidden">
                 <ul className="flex gap-16 text-xs cursor-pointer text-slate-500 font-bold">
